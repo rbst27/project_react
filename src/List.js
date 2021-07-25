@@ -15,11 +15,20 @@ function List (){
     return (
         <>
         {state.map((tra) =>
-            <li>
-            <img src={tra.img} />
+            <li className="borda" key={tra.id}>
+            <img className="perfil" src={tra.img}  alt="perfil"/>
+            <div className="informacoes"> 
+            <p>
             <label>Nome do Usuário:</label>{tra.name}
-            <label>Id:</label>{tra.id}
-            <label>Username:</label>{tra.username}
+            </p>
+            <p>
+             <label>Id:</label>{tra.id}
+             <label>   Username:</label>{tra.username}
+            </p>
+            </div>
+          
+            
+            <button>Pagar</button>
             </li>
             )}
             </>

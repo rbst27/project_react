@@ -6,8 +6,8 @@ import "./list.css";
 const rootComponent=document.getElementById("root")
 ReactDOM.render(
     <React.StrictMode>
-        <div>
-            <ul>
+        <div className="container">
+            <ul className="usuarios">
                 <List />
             </ul>
         </div>
