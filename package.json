@@ -1,6 +1,7 @@
 {
   "name": "projeto-react",
   "version": "0.1.0",
+  "homepage": "https://rbst27.github.io/public",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
