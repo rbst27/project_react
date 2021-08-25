@@ -1,6 +1,7 @@
 
 import "./list.css";
 import React, {useEffect,useState } from 'react';
+import InfiniteScroll from "react-infinite-scroll-component";
   
 
 function List (){
@@ -141,6 +142,7 @@ function List (){
     }, []);
     return (
         <>
+     
         {state.map((tra) =>
               
             <li className="borda" key={tra.id}>
@@ -163,11 +165,12 @@ function List (){
              
             </li>
              )} 
-             
+          
              { (show) ? <Modal /> : null } 
              { (resultado) ? retorno : null } 
            
-            </>
+        
+             </>
             );
 
 
